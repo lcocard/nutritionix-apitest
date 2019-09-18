@@ -1,0 +1,47 @@
+<!DOCTYPE html> ​
+<html lang="US">
+
+<head>
+
+    <meta charset="UTF-8" /> ​
+    <title>Get Fit!</title>
+    <!-- --------------------------------------------------------- -->
+    ​
+    <!-- Rendering for mobile devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Orbitron&display=swap" rel="stylesheet" />
+    <!-- Bootstrap Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Added Moment JS -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <!-- include the needed font from google api -->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Archivo+Black" />
+    
+
+</head>
+​
+
+<body>
+        <script>
+    var settings = {
+        "async": true,
+        "crossDomain": true,
+        "url": "https://nutritionix-api.p.rapidapi.com/v1_1/search/cheddar%20cheese%20with%20toast?fields=item_name%2Cnf_calories%2Cnf_sodium%2Cnf_sugars%2Cbrand_name",
+        "method": "GET",
+        "headers": {
+            "x-rapidapi-host": "nutritionix-api.p.rapidapi.com",
+            "x-rapidapi-key": "8c77ea7283mshc99fcca60fbab6bp1039aejsn16b03322f1e9"
+        }
+    }
+    $.ajax(settings).done(function (response) {
+        console.log(response);
+    });
+</script>
+</body>
+
+</html>
